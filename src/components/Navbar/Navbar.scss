@@ -1,0 +1,115 @@
+@use "src/Colors" as c;
+
+$blue: c.$primary-color-blue;
+
+.Navbar {
+  display: none;
+  width: 100%;
+  background: $blue;
+  color: white;
+  padding: 0.5rem clamp(10px, 1rem, 20px);
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+
+    &__logo {
+      img {
+        height: 100px;
+        width: 100px;
+      }
+    }
+
+    &__links {
+      display: flex;
+      align-items: center;
+
+      ul {
+        display: flex;
+        gap: clamp(10px, 1rem, 20px);
+
+        li {
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+  }
+}
+
+.NavbarMobile {
+  display: flex;
+  width: 100%;
+  background: $blue;
+  color: white;
+  padding: 0.5rem clamp(10px, 1rem, 20px);
+  justify-content: space-between;
+  z-index: 2;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    &__logo {
+      img {
+        height: 100px;
+        width: 100px;
+      }
+    }
+
+    &__dropdownMenu {
+      font-size: 2rem;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      z-index: 2;
+    }
+
+    &__links {
+      position: absolute;
+      top: calc(100px + 1rem + 4px);
+      right: 0;
+      background: #006da9;
+      display: flex;
+      align-items: center;
+      width: clamp(100px, 50vw, 300px);
+      border-bottom-left-radius: 0.5rem;
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 1rem;
+
+        li {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          padding: 0.5rem 1rem;
+          cursor: pointer;
+
+          &:hover {
+            color: #006da9;
+            background: white;
+            border: 1px solid #006da9;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 756px) {
+  .Navbar {
+    display: flex;
+  }
+
+  .NavbarMobile {
+    display: none;
+  }
+}

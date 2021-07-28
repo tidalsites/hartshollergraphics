@@ -1,0 +1,168 @@
+@use "src/Colors" as c;
+@use "src/Globals";
+
+.Home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  &__section {
+    width: 100vw;
+
+    &__header {
+      font-size: 2.5rem;
+      color: white;
+      display: flex;
+      justify-content: center;
+      padding: 2rem;
+      background: c.$primary-color-blue;
+      font-weight: 700;
+    }
+
+    &__subheader {
+      font-size: 2rem;
+      display: flex;
+      justify-content: center;
+      padding: 5rem 1rem;
+      color: c.$primary-color-black;
+      font-weight: 700;
+    }
+
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin: 3rem auto;
+
+      &__item {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        font-size: 1.8rem;
+        margin: 1rem;
+        padding: 2rem 1rem;
+        border: 2px solid c.$primary-color-black;
+        border-radius: 5px;
+        width: clamp(250px, 100%, 500px);
+        cursor: pointer;
+        transition: all 0.25s ease-in-out;
+
+        i {
+          transition: all 0.25s ease-in-out;
+        }
+      }
+    }
+  }
+
+  &__hero {
+    display: flex;
+    flex-direction: column;
+    font-size: clamp(24px, 6vw, 54px);
+    font-weight: 700;
+    z-index: 2;
+    width: 100vw;
+    height: calc(100vh - (100px + 1rem + 4px));
+    background: url("../../assets/shirts.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    span {
+      padding: 2rem 1rem;
+      margin-top: 25vh;
+      width: 100vw;
+      background: rgba(c.$primary-color-blue, 0.8);
+      border-top: 2px solid c.$primary-color-black;
+      border-bottom: 2px solid c.$primary-color-black;
+      box-shadow: 0 -1px 3px 1px c.$primary-color-black,
+        0 1px 3px 1px c.$primary-color-black;
+      text-align: center;
+      color: #eee;
+    }
+  }
+
+  &__services {
+    &__list {
+      &__item {
+        &:hover {
+          background: c.$primary-color-blue;
+          color: white;
+          border: 2px solid c.$primary-color-blue;
+          transform: scale(1.03);
+          border-radius: 5px;
+
+          i {
+            color: white;
+          }
+        }
+      }
+      .recommended {
+        border: 3px solid c.$primary-color-green;
+        position: relative;
+        padding: 2.2rem 1rem;
+
+        &:hover {
+          border: 2px solid c.$primary-color-blue;
+
+          &::after {
+            display: none;
+          }
+        }
+
+        &::after {
+          content: "Recommended";
+          position: absolute;
+          top: 0;
+          left: 0;
+          font-size: 0.8rem;
+          background: #00c342;
+          color: white;
+          padding: 0.2rem;
+        }
+      }
+    }
+  }
+
+  &__materials {
+    &__list {
+      &__item {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+
+        &__header {
+          background: c.$primary-color-blue;
+          color: white;
+          width: 100%;
+          text-align: center;
+          padding: 0.5rem;
+          border-top-left-radius: 2px;
+          border-top-right-radius: 2px;
+        }
+
+        &__services {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 1rem;
+          font-size: 1rem;
+          padding: 1rem;
+
+          &__group {
+            display: flex;
+            gap: 0.3rem;
+            align-items: center;
+
+            i.fa-check {
+              color: c.$primary-color-green;
+            }
+
+            i.fa-times {
+              color: c.$primary-color-red;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,5 @@
+@use "src/Colors" as c;
+
+.color-primary-blue {
+  color: c.$primary-color-blue;
+}
