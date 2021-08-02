@@ -7,9 +7,6 @@
   top: 0;
   background: c.$primary-color-green;
   color: white;
-  //   max-width: 500px;
-  //   margin: auto;
-  //   height: 0;
   z-index: 20;
   width: 100%;
   justify-content: center;
@@ -23,8 +20,6 @@
     display: flex;
     gap: 1rem;
     padding: clamp(0.2rem, 2vw, 1rem);
-    // background: c.$primary-color-green;
-    // color: white;
     background: white;
     color: c.$primary-color-green;
   }

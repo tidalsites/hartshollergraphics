@@ -10,7 +10,7 @@ export const ContactBar: FC = () => {
       </div>
       <div className="ContactBar__item ContactBar__email">
         <i className="fa fa-envelope"></i>
-        <span>blhart89@outlook.com</span>
+        <span>hartshollergraphics@outlook.com</span>
       </div>
     </div>
   );
