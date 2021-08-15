@@ -18,8 +18,8 @@ $blue: c.$primary-color-blue;
 
     &__logo {
       img {
-        height: 100px;
-        width: 100px;
+        aspect-ratio: auto;
+        max-height: 100px;
       }
     }
 
@@ -34,6 +34,11 @@ $blue: c.$primary-color-blue;
         li {
           display: flex;
           align-items: center;
+          padding: 1rem;
+
+          &:hover {
+            outline: 3px solid white;
+          }
         }
       }
     }
@@ -47,7 +52,7 @@ $blue: c.$primary-color-blue;
   color: white;
   padding: 0.5rem clamp(10px, 1rem, 20px);
   justify-content: space-between;
-  z-index: 2;
+  z-index: 5;
 
   &__inner {
     display: flex;
@@ -56,8 +61,10 @@ $blue: c.$primary-color-blue;
 
     &__logo {
       img {
-        height: 100px;
-        width: 100px;
+        aspect-ratio: auto;
+        max-height: 100px;
+        // height: 100px;
+        // width: 100px;
       }
     }
 
@@ -75,28 +82,35 @@ $blue: c.$primary-color-blue;
       right: 0;
       background: #006da9;
       display: flex;
-      align-items: center;
-      width: clamp(100px, 50vw, 300px);
+      // align-items: center;
+      width: clamp(130px, 75vw, 300px);
       border-bottom-left-radius: 0.5rem;
 
       ul {
         display: flex;
         flex-direction: column;
         width: 100%;
-        gap: 1rem;
 
         li {
           display: flex;
-          justify-content: center;
+          justify-content: flex-end;
           align-items: center;
           width: 100%;
-          padding: 0.5rem 1rem;
+          padding: 1rem;
           cursor: pointer;
+          border-bottom: 5px solid white;
+          border-left: 5px solid white;
 
-          &:hover {
+          a {
+            text-align: right;
+            font-size: clamp(20px, 4vw, 26px);
+            padding-right: clamp(1%, 2vw, 30px);
+          }
+
+          &:hover,
+          &:focus {
             color: #006da9;
             background: white;
-            border: 1px solid #006da9;
           }
         }
       }

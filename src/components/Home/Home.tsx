@@ -3,6 +3,8 @@ import "./Home.scss";
 import tshirts from "../../assets/shirts.jpg";
 import hats from "../../assets/hats.jpg";
 import cups from "../../assets/cups.jpg";
+import Tumbler from "../../assets/tumbler.jpg";
+import colorChart from "../../assets/color-chart.jpg";
 
 export const Home: FC = () => {
   return (
@@ -73,9 +75,15 @@ export const Home: FC = () => {
             </span>
           </div>
         </div>
-        {/* <button className="Home__section__cta Home__techniques__cta">
-          Learn more
-        </button> */}
+        <div className="Home__techniques__colors">
+          <span>Take a peek at the color options for Heat Transfer Vinyl</span>
+          <div className="Home__techniques__colors__bullets">
+            <span>&bull;</span>
+            <span>&bull;</span>
+            <span>&bull;</span>
+          </div>
+          <img src={colorChart} alt="Color chart" />
+        </div>
       </div>
       <div className="Home__services Home__section" id="Services">
         <span className="Home__services__header Home__section__header">
@@ -132,29 +140,23 @@ export const Home: FC = () => {
             </div>
           </div>
         </div>
+        <div className="Home__services__showcase">
+          <div className="Home__services__showcase__img">
+            <span>Sublimation</span>
+            <img src={Tumbler} alt="Tumbler with cammo deer design" />
+          </div>
+          <div className="Home__services__showcase__content">
+            <p>
+              Sublimation is perfect for polyester and polyester-blend clothing.
+              Shirts, pants, hoodies, socks. But it is also great for
+              hard-surface items such as tumblers and coffee mugs. Throw your
+              own design on your favorite household items. If you're wondering
+              whether or not you can throw a design on something in your house,
+              just give us a call or send us an email!
+            </p>
+          </div>
+        </div>
       </div>
-      {/* <div className="Home__section Home__pricing">
-        <div className="Home__section__header Home__pricing__header">
-          Pricing
-        </div>
-        <div className="Home__section__list Home__pricing__list">
-          <div className="Home__section__list__item Home__pricing__list__item">
-            T-shirts starting at $16.50
-          </div>
-          <div className="Home__section__list__item Home__pricing__list__item">
-            Hats starting at $12.00
-          </div>
-          <div className="Home__section__list__item Home__pricing__list__item">
-            Cups $10.00 Sublimation or Vinyl decals
-          </div>
-          <div className="Home__section__list__item Home__pricing__list__item">
-            Tumblers $12.00 Sublimation or Vinyl decals
-          </div>
-          <div className="Home__section__list__item Home__pricing__list__item">
-            Decals and Stickers starting at $5.00
-          </div>
-        </div>
-      </div> */}
     </div>
   );
 };

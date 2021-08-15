@@ -1,7 +1,6 @@
 import { FC, useState } from "react";
-import { Link } from "react-router-dom";
 import "./Navbar.scss";
-import logo from "../../assets/logo.svg";
+import logo from "../../assets/hhg_logo.png";
 
 export const Navbar: FC = () => {
   const [dropdownActivated, setDropdownActivated] = useState<boolean>(false);
@@ -14,18 +13,6 @@ export const Navbar: FC = () => {
           </div>
           <div className="Navbar__inner__links">
             <ul>
-              {/* <li>
-                <Link to="/">Home</Link>
-              </li>
-              <li>
-                <Link to="/">About</Link>
-              </li>
-              <li>
-                <Link to="/">Techniques</Link>
-              </li>
-              <li>
-                <Link to="/">Services</Link>
-              </li> */}
               <li>
                 <a href="#">Home</a>
               </li>
@@ -57,16 +44,16 @@ export const Navbar: FC = () => {
             <div className="NavbarMobile__inner__links">
               <ul>
                 <li>
-                  <a href="/home">Home</a>
+                  <a href="#">Home</a>
                 </li>
                 <li>
-                  <a href="/about">About</a>
+                  <a href="#About">About</a>
                 </li>
                 <li>
-                  <a href="/contact">Contact</a>
+                  <a href="#Techniques">Techniques</a>
                 </li>
                 <li>
-                  <a href="/info">Info</a>
+                  <a href="#Services">Services</a>
                 </li>
               </ul>
             </div>
