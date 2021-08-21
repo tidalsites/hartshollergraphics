@@ -7,7 +7,6 @@ import { Navbar } from "./components/Navbar/Navbar";
 import { Home } from "./components/Home/Home";
 import { Footer } from "./components/Footer/Footer";
 import { ContactBar } from "./components/ContactBar/ContactBar";
-import { About } from "./components/About/About";
 
 const App: FC = () => {
   return (
@@ -18,9 +17,6 @@ const App: FC = () => {
         <Switch>
           <Route exact path="/">
             <Home />
-          </Route>
-          <Route exact path="/about">
-            <About />
           </Route>
         </Switch>
         <Footer />

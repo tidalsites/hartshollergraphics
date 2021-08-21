@@ -63,8 +63,6 @@ $blue: c.$primary-color-blue;
       img {
         aspect-ratio: auto;
         max-height: 100px;
-        // height: 100px;
-        // width: 100px;
       }
     }
 
@@ -82,7 +80,6 @@ $blue: c.$primary-color-blue;
       right: 0;
       background: #006da9;
       display: flex;
-      // align-items: center;
       width: clamp(130px, 75vw, 300px);
       border-bottom-left-radius: 0.5rem;
 

@@ -5,6 +5,8 @@ import hats from "../../assets/hats.jpg";
 import cups from "../../assets/cups.jpg";
 import Tumbler from "../../assets/tumbler.jpg";
 import colorChart from "../../assets/color-chart.jpg";
+import stickers from "../../assets/stickers.jpg";
+import screenPrinting from "../../assets/screen-printing.jpg";
 
 export const Home: FC = () => {
   return (
@@ -74,6 +76,15 @@ export const Home: FC = () => {
               Easy to apply to any fabric project needs
             </span>
           </div>
+          <div className="Home__techniques__list__item Home__section__list__item">
+            <div className="Home__techniques__list__item__header">
+              <i className="fas fa-angle-double-right color-primary-blue"></i>
+              <span>Screen Printing</span>
+            </div>
+            <span className="Home__techniques__list__item__content">
+              Great option for posters and framed designs
+            </span>
+          </div>
         </div>
         <div className="Home__techniques__colors">
           <span>Take a peek at the color options for Heat Transfer Vinyl</span>
@@ -125,7 +136,7 @@ export const Home: FC = () => {
                 <span>Cups $10.00 Sublimation or Vinyl decals</span>
                 <span>Tumblers $12.00 Sublimation or Vinyl decals</span>
               </div>
-              <img src={cups} alt="Hats" />
+              <img src={cups} alt="Collection of hats on a rack outside" />
             </div>
           </div>
           <div className="Home__services__list__item Home__section__list__item HomeMaterialListItem">
@@ -136,7 +147,22 @@ export const Home: FC = () => {
               <div className="Home__services__list__item__content__prices">
                 <span>Decals and Stickers starting at $5.00</span>
               </div>
-              <img src={hats} alt="Hats" />
+              <img
+                src={stickers}
+                alt="Multiple decorative stickers on windows"
+              />
+            </div>
+          </div>
+          <div className="Home__services__list__item Home__section__list__item HomeMaterialListItem">
+            <span className="Home__services__list__item__header">Screens</span>
+            <div className="Home__services__list__item__content">
+              <div className="Home__services__list__item__content__prices">
+                <span>Prints starting at $5.00</span>
+              </div>
+              <img
+                src={screenPrinting}
+                alt="Picture frame with custom deer logo and text saying 'CREATE YOUR VISION CUSTOMIZE YOUR WORLD'"
+              />
             </div>
           </div>
         </div>
