@@ -82,7 +82,7 @@ export const Home: FC = () => {
               <span>Screen Printing</span>
             </div>
             <span className="Home__techniques__list__item__content">
-              Great option for posters and framed designs
+              Another great option for T-shirts using vinyl stencils
             </span>
           </div>
         </div>
@@ -111,7 +111,9 @@ export const Home: FC = () => {
             </span>
             <div className="Home__services__list__item__content">
               <div className="Home__services__list__item__content__prices">
-                <span>T-shirts starting at $16.50</span>
+                <span>Vinyl: $12.00</span>
+                <span>Sublimation: $16.50</span>
+                <span>Screen printed: $20.00</span>
               </div>
 
               <img src={tshirts} alt="T-shirts" />
@@ -153,7 +155,7 @@ export const Home: FC = () => {
               />
             </div>
           </div>
-          <div className="Home__services__list__item Home__section__list__item HomeMaterialListItem">
+          {/* <div className="Home__services__list__item Home__section__list__item HomeMaterialListItem">
             <span className="Home__services__list__item__header">Screens</span>
             <div className="Home__services__list__item__content">
               <div className="Home__services__list__item__content__prices">
@@ -164,7 +166,7 @@ export const Home: FC = () => {
                 alt="Picture frame with custom deer logo and text saying 'CREATE YOUR VISION CUSTOMIZE YOUR WORLD'"
               />
             </div>
-          </div>
+          </div> */}
         </div>
         <div className="Home__services__showcase">
           <div className="Home__services__showcase__img">
